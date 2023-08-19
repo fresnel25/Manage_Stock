@@ -8,6 +8,7 @@ public class StockBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StockBackendApplication.class, args);
+		System.out.println("junior");
 	}
 
 }

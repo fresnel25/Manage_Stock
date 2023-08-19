@@ -1,0 +1,34 @@
+# D�finit port de lancement du projet
+#server.port=8080
+# Connection � la base de donn�es
+#spring.datasource.username=root
+#spring.datasource.password= 
+#spring.datasource.url=jdbc:mysql://localhost:3306/sms
+# Active l'affichage des requ�tes SQL ex�cut�es par Hibernate dans la console
+#spring.jpa.show-sql= true
+# D�sactive le formatage des requ�tes SQL g�n�r�es par Hibernate
+#spring.jpa.properties.hibernate.format_sql=false
+# G�n�re automatique du sch�ma de la base de donn�e
+#spring.jpa.hibernate.ddl-auto=create
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sms
+    username: root
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+    database: MYSQL
+    show-sql: true
+    
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+      
+server:
+   port: 8081
+    
