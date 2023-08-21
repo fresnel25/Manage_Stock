@@ -1,8 +1,6 @@
 package org.sid.Gestion_de_Stock.Model;
 
 import java.math.BigDecimal;
-import java.time.Instant;
-import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -30,7 +28,7 @@ public class LigneCommandeFournisseur extends AbstractEntity {
 	
 	@ManyToOne
 	@JoinColumn(name = "idCommandeFournisseur")
-	private CommandeFournisseur commandeFournisseur;
+	private CommandeFournisseur commandefournisseur;
 	
 	@Column(name = "Quantite")
 	private BigDecimal quantite;
