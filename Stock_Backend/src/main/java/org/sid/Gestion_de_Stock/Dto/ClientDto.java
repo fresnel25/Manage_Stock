@@ -2,9 +2,6 @@ package org.sid.Gestion_de_Stock.Dto;
 
 import java.util.List;
 
-import org.sid.Gestion_de_Stock.Model.Adresse;
-
-import jakarta.persistence.Embedded;
 import lombok.Builder;
 import lombok.Data;
 
