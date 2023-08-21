@@ -1,8 +1,10 @@
 package org.sid.Gestion_de_Stock.Model;
 
+import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.List;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -29,4 +31,10 @@ public class LigneCommandeClient extends AbstractEntity {
 	@ManyToOne
 	@JoinColumn(name = "idCommandeClient")
 	private CommandeClient commandeClient;
+	
+	@Column(name = "Quantite")
+	private BigDecimal quantite;
+	
+	@Column(name = "PrixUnitaire")
+	private BigDecimal prixUnitaire;
 }
