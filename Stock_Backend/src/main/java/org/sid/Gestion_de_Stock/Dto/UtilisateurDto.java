@@ -9,6 +9,8 @@ import lombok.Data;
 @Data
 @Builder
 public class UtilisateurDto {
+	
+	private Integer id;
 
 	private String nom;
 	

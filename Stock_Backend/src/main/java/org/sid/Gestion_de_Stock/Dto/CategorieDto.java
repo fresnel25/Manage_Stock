@@ -9,6 +9,8 @@ import lombok.Data;
 @Builder
 public class CategorieDto {
 	
+	private Integer id;
+	
 	private String code;
 	
 	private String designation;

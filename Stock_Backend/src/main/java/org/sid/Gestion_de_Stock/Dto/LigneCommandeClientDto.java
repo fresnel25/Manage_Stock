@@ -8,6 +8,8 @@ import lombok.Data;
 @Data
 @Builder
 public class LigneCommandeClientDto {
+	
+	private Integer id;
 
 	private ArticleDto article;
 	
